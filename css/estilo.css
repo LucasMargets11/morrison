@@ -1,0 +1,198 @@
+header .buscar {
+  padding: 5px; 
+  padding-left: 15px;}
+
+header .buscar input {
+  width: 240px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: black;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px; }
+
+header .x {
+  text-align: center;
+  margin-top: 1px; }
+
+header .logo {
+  width: 100px;
+  text-align: center; }
+  header .logo:hover {
+    transform: scale(1.1, 1.1); }
+
+header .menu {
+  list-style-type: none;
+  text-align: center;
+  border: 1px solid silver;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 0px 10px 0px 10px; }
+
+header .menu li {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  padding: 10px 0px;
+  border: 1px solid black;
+  border-radius: 30px;
+  max-width: 280px;
+  width: 280px;
+  overflow: hidden; }
+
+header .menu li a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  max-width: 280px; }
+  header .menu li a:hover {
+    color: black;
+    font-weight: bold;
+    overflow: hidden; }
+
+.footer {
+  background-color: #e3e3e3;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  border: 1px black solid;
+  border-radius: 30px;
+  align-self: flex-end; }
+  .footer .foot {
+    width: 80px;
+    text-align: center; }
+  .footer .mail {
+    color: black;
+    font-family: 'Montserrat', sans-serif; }
+
+.indice {
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center; }
+  .indice li a {
+    color: #818181;
+    text-decoration: none; }
+    .indice li a:hover {
+      color: black;
+      font-weight: bold; }
+    .indice li a .talles:hover {
+      transform: scale(1.1, 1.1); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+ol, ul {
+  padding-left: 0; }
+
+body {
+  background-color: #fff;
+  color: black;
+  font-family: 'Roboto Mono', monospace; }
+
+.contenedor {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "carru carru carru carru"
+ "texto texto texto texto"
+ "sidebar contenido contenido contenido"
+ "sidebar contenido contenido contenido"; }
+
+.contenedor .carru {
+  grid-area: carru; }
+
+.contenedor .sidebar {
+  display: flex;
+  justify-content: center;
+  min-height: 100px;
+  grid-area: sidebar;
+  padding-top: 25px; }
+
+.contenedor .contenido {
+  grid-area: contenido;
+  text-align: center; }
+
+.texto-P {
+  grid-area: texto;
+  text-align: center;
+  color: #323232;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0px 0px 0px 30px;  }
+
+.imgs {
+  padding-top: 25px;
+  width: 280px;
+  height: 500px; }
+
+.imgs:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 1s ease; }
+.bot:hover{
+  transform: scale(1.1, 1.1);
+  transition: all 1s ease;
+}
+.pagination{
+  padding-right: 30px;
+}
+.card-img-top:hover{
+    transform: scale(1.1, 1.1);
+    transition: all 1s ease; 
+  border-radius: 20px;}
+
+.carro {
+  height: 350px;
+  width: 100%; }
+
+.mapa {
+  padding-top: 15px;
+  }
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "texto"
+ "sidebar"
+ "contenido"; }
+  .imgs:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 1s ease;
+    border-radius: 0%; }
+  .mail {
+    font-size: 13px; }
+  .contenido {
+    width: 100vw; }
+  .imgs {
+    height: 400px;
+    max-width: 225px; }
+  .footer {
+    height: 75px;
+    width: 90vw; }
+  .sidebar {
+    text-align: center; }
+  .header {
+    width: 100vw; }
+  .ord {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .carru{
+    display: none; } 
+  .texto-P{
+    display: none; } 
+  .mapa{
+    width: 100vw;
+  }}

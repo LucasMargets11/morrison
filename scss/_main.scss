@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    padding-left: 0;
+}
+body{
+    background-color: #fff;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr,);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas:"carru carru carru carru"
+                        "texto texto texto texto"
+                        "sidebar contenido contenido contenido"
+                        "sidebar contenido contenido contenido"
+                         ;
+}
+.contenedor .carru{
+    grid-area: carru;
+}
+.contenedor .sidebar{
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
+    padding-top: 25px;
+}
+.contenedor .contenido{
+    grid-area: contenido;
+    text-align: center;
+}
+.texto-P{
+    grid-area: texto;
+    text-align: center;
+    color:rgb(50, 50, 50);
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0px 0px 0px 30px;
+}
+.imgs{
+    padding-top: 25px;
+    width: 280px;
+    height: 500px;
+}
+.imgs:hover{
+    transform: scale(1.1,1.1);
+    transition: all 1s ease;
+}
+.carro{
+    height: 350px;
+    width: 100%;
+}
+.mapa{
+    padding-top: 15px;
+}

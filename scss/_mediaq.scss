@@ -1,0 +1,43 @@
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "texto"
+                             "sidebar"
+                             "contenido";
+    }
+    .imgs:hover{
+        transform: scale(1.1,1.1);
+        transition: all 1s ease;
+        border-radius: 0%;
+    }
+    .mail{
+        font-size: 13px;
+    }
+    .contenido{
+        width: 100vw;
+    }
+    .imgs{
+        height: 400px;
+        max-width: 225px;
+    }
+    .footer{
+        height: 75px;
+        width: 90vw;
+    }
+    .sidebar{
+        text-align: center;
+    }
+    .header{
+        width: 100vw;
+    }
+    .ord{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .carru{
+        display: none;
+    }
+}

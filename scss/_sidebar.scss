@@ -1,0 +1,20 @@
+.indice {
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box; 
+    text-decoration: none;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    li a{
+    color: rgb(129, 129, 129);
+    text-decoration: none;  
+        &:hover{
+            color: black;    
+        font-weight: bold;
+        }
+        .talles:hover{
+            transform: scale(1.1,1.1);
+        }
+    }
+}

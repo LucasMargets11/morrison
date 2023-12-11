@@ -1,0 +1,22 @@
+
+.footer{
+    background-color: $color-footer;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    border: 1px black solid;
+    border-radius: 30px;
+    align-self: flex-end;
+    .foot{
+        width: 80px;
+        text-align: center;
+    }
+    .mail{
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+    
